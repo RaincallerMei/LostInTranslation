@@ -4,10 +4,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * This class provides the service of converting country codes to their names and back.
@@ -41,7 +38,8 @@ public class CountryCodeConverter {
             while (iterator.hasNext()) {
                 String line = iterator.next();
                 String[] parts = line.split("\t");
-                // TODO Task B: use parts to populate the instance variables
+                countryToCountryCode.put(parts[0], parts[2]);
+                countryCodeToCountry.put(parts[2], parts[0]);
             }
         }
         catch (IOException | URISyntaxException ex) {
@@ -56,8 +54,7 @@ public class CountryCodeConverter {
      * @return the name of the country corresponding to the code
      */
     public String fromCountryCode(String code) {
-        // TODO Task B: update this code to use an instance variable to return the correct value
-        return code;
+        return countryCodeToCountry.get(code.toUpperCase());
     }
 
     /**
@@ -66,8 +63,11 @@ public class CountryCodeConverter {
      * @return the 3-letter code of the country
      */
     public String fromCountry(String country) {
-        // TODO Task B: update this code to use an instance variable to return the correct value
-        return country;
+        if (country == null || country.isEmpty()) {
+            return country;
+        }
+        String firstChar = country.substring(0, 1);
+        return countryToCountryCode.get(firstChar + country.substring(1).toLowerCase());
     }
 
     /**
@@ -75,7 +75,7 @@ public class CountryCodeConverter {
      * @return how many countries are included in this country code converter.
      */
     public int getNumCountries() {
-        // TODO Task B: update this code to use an instance variable to return the correct value
-        return 0;
+        HashSet<String> countries = new HashSet<>(countryToCountryCode.keySet());
+        return countries.size();
     }
 }
