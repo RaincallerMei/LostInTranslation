@@ -40,8 +40,21 @@ public class CountryCodeConverter {
             iterator.next(); // skip the first line
             while (iterator.hasNext()) {
                 String line = iterator.next();
+                if (line == null || line.length() == 0 || line.charAt(0) != '#') {
+                    continue;
+                }
                 String[] parts = line.split("\t");
-                // TODO Task B: use parts to populate the instance variables
+                if (parts.length < 2) {
+                    continue;
+                }
+                String code = parts[0].trim();
+                String countryCode = parts[1].trim();
+                if (code.isEmpty() || countryCode.isEmpty()) {
+                    continue;
+                }
+                code = code.toUpperCase();
+                countryCodeToCountry.put(code, countryCode);
+                countryToCountryCode.put(countryCode, code);
             }
         }
         catch (IOException | URISyntaxException ex) {
@@ -56,7 +69,6 @@ public class CountryCodeConverter {
      * @return the name of the country corresponding to the code
      */
     public String fromCountryCode(String code) {
-        // TODO Task B: update this code to use an instance variable to return the correct value
         if (code == null) {
             return null;
         }
