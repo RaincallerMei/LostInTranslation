@@ -46,7 +46,7 @@ public class CanadaTranslator implements Translator {
             return null;
         }
         if (languageCode.equals("de")) {
-            return "Germany";
+            return "Kanada";
         }
         else if (languageCode.equals("en")) {
             return "Canada";
@@ -55,10 +55,10 @@ public class CanadaTranslator implements Translator {
             return "加拿大";
         }
         else if ("es".equals(languageCode)) {
-            return "Spain";
+            return "Canadá";
         }
         else if ("fr".equals(languageCode)) {
-            return "French";
+            return "Canada";
         }
         else {
             return null;
