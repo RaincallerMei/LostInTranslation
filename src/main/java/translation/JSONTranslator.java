@@ -86,6 +86,7 @@ public class JSONTranslator implements Translator {
 
     @Override
     public String translate(String countryCode, String languageCode) {
-        return CanadaTranslator.translate(countryCode, languageCode);
+        CanadaTranslator canadaTranslator = new CanadaTranslator(); // Create an instance
+        return canadaTranslator.translate(countryCode, languageCode);
     }
 }
