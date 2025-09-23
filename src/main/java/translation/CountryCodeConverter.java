@@ -37,21 +37,9 @@ public class CountryCodeConverter {
             iterator.next(); // skip the first line
             while (iterator.hasNext()) {
                 String line = iterator.next();
-                if (line == null || line.isEmpty() || line.charAt(0) != '#') {
-                    continue;
-                }
                 String[] parts = line.split("\t");
-                if (parts.length < 2) {
-                    continue;
-                }
-                String country = parts[0].trim();
-                String countryCode = parts[1].trim();
-                if (country.isEmpty() || countryCode.isEmpty()) {
-                    continue;
-                }
-                country = country.toUpperCase();
-                countryCodeToCountry.put(countryCode, country);
-                countryToCountryCode.put(country, countryCode);
+                countryToCountryCode.put(parts[0], parts[2]);
+                countryCodeToCountry.put(parts[2], parts[0]);
             }
         }
         catch (IOException | URISyntaxException ex) {
@@ -66,10 +54,7 @@ public class CountryCodeConverter {
      * @return the name of the country corresponding to the code
      */
     public String fromCountryCode(String code) {
-        if (code == null) {
-            return null;
-        }
-        else return countryCodeToCountry.get(code);
+        return countryCodeToCountry.get(code.toUpperCase());
     }
 
     /**
@@ -78,10 +63,11 @@ public class CountryCodeConverter {
      * @return the 3-letter code of the country
      */
     public String fromCountry(String country) {
-        if (country == null) {
-            return null;
+        if (country == null || country.isEmpty()) {
+            return country;
         }
-        return countryCodeToCountry.get(country);
+        String firstChar = country.substring(0, 1);
+        return countryToCountryCode.get(firstChar + country.substring(1).toLowerCase());
     }
 
     /**
@@ -89,10 +75,7 @@ public class CountryCodeConverter {
      * @return how many countries are included in this country code converter.
      */
     public int getNumCountries() {
-        HashSet<String> countries = new HashSet<>();
-        for (String countryCode : countryToCountryCode.keySet()) {
-            countries.add(countryToCountryCode.get(countryCode));
-        }
+        HashSet<String> countries = new HashSet<>(countryToCountryCode.keySet());
         return countries.size();
     }
 }
