@@ -37,7 +37,7 @@ public class CountryCodeConverter {
             iterator.next(); // skip the first line
             while (iterator.hasNext()) {
                 String line = iterator.next();
-                if (line == null || line.length() == 0 || line.charAt(0) != '#') {
+                if (line == null || line.isEmpty() || line.charAt(0) != '#') {
                     continue;
                 }
                 String[] parts = line.split("\t");
@@ -90,6 +90,9 @@ public class CountryCodeConverter {
      */
     public int getNumCountries() {
         HashSet<String> countries = new HashSet<>();
-        return 0;
+        for (String countryCode : countryToCountryCode.keySet()) {
+            countries.add(countryToCountryCode.get(countryCode));
+        }
+        return countries.size();
     }
 }
