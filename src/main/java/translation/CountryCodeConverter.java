@@ -44,14 +44,14 @@ public class CountryCodeConverter {
                 if (parts.length < 2) {
                     continue;
                 }
-                String code = parts[0].trim();
+                String country = parts[0].trim();
                 String countryCode = parts[1].trim();
-                if (code.isEmpty() || countryCode.isEmpty()) {
+                if (country.isEmpty() || countryCode.isEmpty()) {
                     continue;
                 }
-                code = code.toUpperCase();
-                countryCodeToCountry.put(code, countryCode);
-                countryToCountryCode.put(countryCode, code);
+                country = country.toUpperCase();
+                countryCodeToCountry.put(countryCode, country);
+                countryToCountryCode.put(country, countryCode);
             }
         }
         catch (IOException | URISyntaxException ex) {
