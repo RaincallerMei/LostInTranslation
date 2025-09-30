@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c65f9b-064c-4c79-bbe4-e06c73a5d049" name="Changes" comment="Passed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translation/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translation/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/translation/JSONTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translation/JSONTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translation/CountryCodeConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/CountryCodeConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translation/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translation/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translation/JSONTranslator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/JSONTranslator.class" afterDir="false" />
-    </list>
+    <list default="true" id="e2c65f9b-064c-4c79-bbe4-e06c73a5d049" name="Changes" comment="hehe finish claude 4.5 op" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758647192047</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hehe finish claude 4.5 op">
+      <option name="closed" value="true" />
+      <created>1759247826767</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759247826767</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +221,7 @@
     <MESSAGE value="haha" />
     <MESSAGE value="Fixed translate()" />
     <MESSAGE value="Passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed" />
+    <MESSAGE value="hehe finish claude 4.5 op" />
+    <option name="LAST_COMMIT_MESSAGE" value="hehe finish claude 4.5 op" />
   </component>
 </project>
