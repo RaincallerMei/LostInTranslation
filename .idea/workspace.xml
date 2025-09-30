@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e2c65f9b-064c-4c79-bbe4-e06c73a5d049" name="Changes" comment="Passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translation/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translation/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/translation/JSONTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/translation/JSONTranslator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/translation/CountryCodeConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/CountryCodeConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translation/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/translation/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/GUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/translation/JSONTranslator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/JSONTranslator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/translation/LanguageCodeConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/translation/LanguageCodeConverter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +35,12 @@
     &quot;assignee&quot;: &quot;RaincallerMei&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RaincallerMei/LostInTranslation.git",
-    "accountId": "0761c8f3-7150-45ba-801f-e5a62a66a0ef"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RaincallerMei/LostInTranslation.git&quot;,
+    &quot;accountId&quot;: &quot;0761c8f3-7150-45ba-801f-e5a62a66a0ef&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -49,29 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GUI.executor": "Run",
-    "JUnit.All in lab3.executor": "Run",
-    "JUnit.java in lab3.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mhyra/LostInTranslation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in lab3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in lab3.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhyra/LostInTranslation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.All in lab3">
+}</component>
+  <component name="RunManager" selected="Application.GUI">
     <configuration name="ComboBoxDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="examples.ComboBoxDemo" />
       <module name="lab3" />
@@ -116,10 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in lab3" />
         <item itemvalue="Application.GUI" />
-        <item itemvalue="Application.ComboBoxDemo" />
         <item itemvalue="JUnit.java in lab3" />
+        <item itemvalue="JUnit.All in lab3" />
+        <item itemvalue="Application.ComboBoxDemo" />
         <item itemvalue="JUnit.All in lab3" />
       </list>
     </recent_temporary>

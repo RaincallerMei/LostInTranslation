@@ -60,7 +60,11 @@ public class JSONTranslator implements Translator {
                     if (!key.equals("id") && !key.equals("alpha2") && !key.equals("alpha3")) {
                         String languageCode = key;
 
-                        translations.put(countryCode + "-" + languageCode, translate(countryCode, languageCode));
+                        // Get the translation value from the JSON
+                        String translation = countryData.getString(languageCode);
+
+                        // Store it in the translations map
+                        translations.put(countryCode + "-" + languageCode, translation);
 
                         if (!languages.contains(languageCode)) {
                             languages.add(languageCode);
@@ -90,7 +94,7 @@ public class JSONTranslator implements Translator {
 
     @Override
     public String translate(String countryCode, String languageCode) {
-        CanadaTranslator canadaTranslator = new CanadaTranslator(); // Create an instance
-        return canadaTranslator.translate(countryCode, languageCode);
+        // Return the translation from the map that was loaded from JSON
+        return translations.get(countryCode + "-" + languageCode);
     }
 }
